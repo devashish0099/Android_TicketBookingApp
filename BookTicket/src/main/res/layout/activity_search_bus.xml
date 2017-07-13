@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_bus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tonmo.bookticket.SearchBusActivity">
+
+
+    <TextView
+        android:text="Company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/company_tv" />
+
+    <TextView
+        android:text="From"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/company_tv"
+        android:layout_marginTop="34dp"
+        android:id="@+id/from_tv"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="To"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from_tv"
+        android:layout_marginTop="34dp"
+        android:id="@+id/to_tv"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/from_spnr"
+        android:entries="@array/from_arrays"
+        android:prompt="@string/location_prompt"
+        android:layout_alignBottom="@+id/from_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/company_spnr" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/company_spnr"
+        android:entries="@array/company_arrays"
+        android:prompt="@string/company_prompt"
+        android:layout_alignTop="@+id/company_tv"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_spnr"
+        android:entries="@array/from_arrays"
+        android:prompt="@string/location_prompt"
+        android:layout_alignBaseline="@+id/to_tv"
+        android:layout_alignBottom="@+id/to_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/from_spnr" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:id="@+id/logout_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ticket Amount"
+        android:id="@+id/ticket_tv"
+        android:layout_below="@+id/to_tv"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seat_spnr"
+        android:entries="@array/ticket_arrays"
+        android:prompt="@string/company_prompt"
+        android:layout_below="@+id/to_spnr"
+        android:layout_alignBottom="@+id/ticket_tv"
+        android:layout_alignTop="@+id/ticket_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/to_spnr">
+    </Spinner>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ac_service_cb"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="45dp"
+        android:id="@+id/sleeper_service_cb"
+        android:text="Sleeper Service" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ac_service_cb"
+        android:layout_above="@+id/logout_btn"
+        android:layout_marginBottom="110dp"
+        android:text="AC Service" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/search_btn"
+        android:layout_above="@+id/logout_btn"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

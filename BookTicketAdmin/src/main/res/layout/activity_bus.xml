@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tonmo.bookticketadmin.BusActivity">
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/company_spinner"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:entries="@array/company_arrays"
+        android:prompt="@string/company_prompt"/>
+
+    <TextView
+        android:text="Company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="From"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/company_spinner"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/from_spinner"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:entries="@array/location_arrays"
+        android:prompt="@string/location_prompt"/>
+
+    <TextView
+        android:text="To"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/from_spinner"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_spinner"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:entries="@array/location_arrays"
+        android:prompt="@string/location_prompt"/>
+
+    <TextView
+        android:text="Seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to_spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView3" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/seat_editText"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignTop="@+id/textView3"
+        android:entries="@array/seat_arrays"
+        android:prompt="@string/seat_prompt"/>
+
+    <TextView
+        android:text="Fare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textView4" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fare_editText"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/textView4"
+        android:entries="@array/fare_arrays"
+        android:prompt="@string/fare_prompt"/>
+
+    <CheckBox
+        android:text="AC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/is_ac_checkBox"
+        android:layout_below="@+id/textView4"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginTop="64dp" />
+
+    <Button
+        android:text="Select Time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/is_ac_checkBox"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/time_button" />
+
+    <Button
+        android:text="ADD BUS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/add_button" />
+
+    <Button
+        android:text="Select Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_button"
+        android:layout_above="@+id/add_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+
+    <CheckBox
+        android:text="Sleeper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/is_sleeper_checkBox"
+        android:layout_above="@+id/time_button"
+        android:layout_alignStart="@+id/to_spinner"
+        android:layout_marginStart="24dp" />
+
+</RelativeLayout>

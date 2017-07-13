@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BookTicket</string>
+    <string name="company_prompt">Choose Company</string>
+    <string name="location_prompt">Choose Location</string>
+    <string-array name="company_arrays">
+        <item>None</item>
+        <item>Green Line Paribahan</item>
+        <item>Nabil Paribahan</item>
+        <item>TR Travels</item>
+        <item>AK Travels</item>
+        <item>Shyamoli Paribahan</item>
+        <item>Sonargan Paribahan</item>
+    </string-array>
+    <string-array name="from_arrays">
+        <item>Dhaka</item>
+        <item>Rajshahi</item>
+        <item>Barisal</item>
+        <item>Khulna</item>
+        <item>Sylhet</item>
+        <item>Rangpur</item>
+        <item>Mymensingh</item>
+        <item>Chittagong</item>
+    </string-array>
+    <string-array name="ticket_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

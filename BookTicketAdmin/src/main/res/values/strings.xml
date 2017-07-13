@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BookTicketAdmin</string>
+    <string name="company_prompt">Choose Service</string>
+    <string name="location_prompt">Choose Location</string>
+    <string name="seat_prompt">Choose Seat Number</string>
+    <string name="fare_prompt">Choose Fare</string>
+    <string-array name="company_arrays">
+        <item>Green Line Paribahan</item>
+        <item>Nabil Paribahan</item>
+        <item>TR Travels</item>
+        <item>AK Travels</item>
+        <item>Shyamoli Paribahan</item>
+        <item>Sonargan Paribahan</item>
+    </string-array>
+
+    <string-array name="location_arrays">
+        <item>Dhaka</item>
+        <item>Rajshahi</item>
+        <item>Barisal</item>
+        <item>Khulna</item>
+        <item>Sylhet</item>
+        <item>Rangpur</item>
+        <item>Mymensingh</item>
+        <item>Chittagong</item>
+    </string-array>
+    <string-array name="seat_arrays">
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+    </string-array>
+
+    <string-array name="fare_arrays">
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+    </string-array>
+</resources>
